@@ -80,7 +80,17 @@ class Beam:
         self.rct.move_ip(self.vx, self.vy)
         screen.blit(self.img, self.rct)
 
-
+class explosion:
+    def __init__(self,rect.center,life):
+        """
+        爆発エフェクトの追加
+        """
+        self.explosion_list=[]
+        self.rect.center(0,0,0)
+        self.
+        ex_img=pg.image.load("C:\Users\Admin\講義\2年前期\C言語プログラミング\第一回\ProjExD\第一回\ex3\fig\explosion.gif")
+        filp_ex_img=pg.transform.flip(ex_img,True,True)
+    
 class Bomb:
     def __init__(self, color, rad):
         self.img = pg.Surface((2*rad, 2*rad))
