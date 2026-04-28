@@ -134,7 +134,6 @@ def main():
                 return
             if event.type == pg.KEYDOWN and event.key == pg.K_SPACE:
                 beams.append(Beam(bird))  # ←複数ビーム
-
         screen.blit(bg_img, [0, 0])
 
         # ゲームオーバー
